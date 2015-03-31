@@ -10,8 +10,75 @@
 	<script type="text/javascript">
 
 	</script>
-</head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">	</head>
 <body>
-	<h1>Ionic Playground</h1>
+	<div class="container">
+		
+		<div class="row">
+		<div class="col-lrg-12">
+			<div class="panel panel-default">
+				<div class="panel-heading"><h1>Filtering Bird Data</h1></div>
+			</div>
+			</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">Size Data In</div>
+						<ul id="size-data-in"></ul>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">Color Data In</div><ul id="color-data-in"></ul></div>
+					</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">Behavior Data In</div><ul id="behavior-data-in"></ul></div>
+					</div>
+			</div>
+		
+	<hr>
+		<div class="row">
+			<div id="size-matches" class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h5>These birds match the selected size:</h5>
+					<button type="button" class="btn btn-lg btn-default"id="match-size">Find Size Matches</button>
+					<ul></ul>
+				</div>
+				</div>
+			</div>
+			<div id="color-matches" class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h5>These birds match the selected colors:</h5>
+					<button type="button" class="btn btn-lg btn-default" id="match-colors">Find Color Matches</button>
+					<ul></ul>
+				</div>
+				</div>
+			</div>
+			<div id="behavior-matches" class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-body">
+					<h5>These birds match the selected behavior:</h5>
+					<button type="button" class="btn btn-lg btn-default"id="match-behavior">Find Behavior Matches</button>
+					<ul></ul>
+				</div>
+				</div>
+			</div>
+		</div>
+	<div id="final-data">
+		
+		<div class="row">
+			<div id="final-list" class="col-sm-12">
+					<div class="panel panel-default">
+						<div class="panel-body">
+						<h5>These birds match the selected behavior:</h5>
+						<ul></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 </body>
 </html>
